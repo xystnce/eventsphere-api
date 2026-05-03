@@ -1,7 +1,6 @@
 <?php
 // ══════════════════════════════════════
 //  EventSphere — API
-//  Save to: C:/xampp/htdocs/api/api.php
 // ══════════════════════════════════════
  
 header("Access-Control-Allow-Origin: *");
