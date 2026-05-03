@@ -2,12 +2,11 @@
 // ══════════════════════════════════════
 //  EventSphere — API
 // ══════════════════════════════════════
- 
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
-header("Access-Control-Allow-Headers: Content-Type, Authorization");
+// CORS headers are set in index.php (the entry point) so they are present
+// on OPTIONS preflight responses too. Do not re-add them here.
+
 header("Content-Type: application/json");
- 
+
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(200); exit(); }
  
 // ══════════════════════════════════════
