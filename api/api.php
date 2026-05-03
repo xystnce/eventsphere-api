@@ -11,14 +11,14 @@ header("Content-Type: application/json");
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(200); exit(); }
  
 // ══════════════════════════════════════
-//  DATABASE CONFIG
+//  DATABASE CONFIG  (set these in Railway → Variables)
 // ══════════════════════════════════════
-define('DB_HOST',   'switchyard.proxy.rlwy.net');
-define('DB_NAME',   'eventsphere_db');  
-define('DB_USER',   'railway');
-define('DB_PASS',   'EEvLcaHtQYjyearjqgygaGYFMjZcXExz');                
-define('DB_PORT',   '45462');
-define('JWT_SECRET','eventsphere_local_secret');
+define('DB_HOST',    getenv('DB_HOST'));
+define('DB_NAME',    getenv('DB_NAME'));
+define('DB_USER',    getenv('DB_USER'));
+define('DB_PASS',    getenv('DB_PASS'));
+define('DB_PORT',    getenv('DB_PORT') ?: '3306');
+define('JWT_SECRET', getenv('JWT_SECRET'));
  
 // ══════════════════════════════════════
 //  DATABASE CONNECTION
