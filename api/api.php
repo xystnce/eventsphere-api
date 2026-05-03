@@ -13,11 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') { http_response_code(200); exit();
 // ══════════════════════════════════════
 //  DATABASE CONFIG
 // ══════════════════════════════════════
-define('DB_HOST',   'localhost');
-define('DB_NAME',   'eventsphere_db');  // your database name
-define('DB_USER',   'root');
-define('DB_PASS',   '');                // XAMPP default is blank
-define('DB_PORT',   '3306');
+define('DB_HOST',   'switchyard.proxy.rlwy.net');
+define('DB_NAME',   'eventsphere_db');  
+define('DB_USER',   'railway');
+define('DB_PASS',   'EEvLcaHtQYjyearjqgygaGYFMjZcXExz');                
+define('DB_PORT',   '45462');
 define('JWT_SECRET','eventsphere_local_secret');
  
 // ══════════════════════════════════════
